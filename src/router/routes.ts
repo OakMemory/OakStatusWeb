@@ -4,7 +4,30 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
+    children: [
+      { path: '', component: () => import('src/pages/NodeStatusPage.vue') },
+    ],
+  },
+  {
+    path: '/node_status',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('src/pages/NodeStatusPage.vue') },
+    ],
+  },
+  {
+    path: '/world_status',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('src/pages/WorldStatusPage.vue') },
+    ],
+  },
+  {
+    path: '/player_status',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('src/pages/PlayerStatusPage.vue') },
+    ],
   },
 
   // Always leave this as last one,

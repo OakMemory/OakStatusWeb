@@ -9,7 +9,7 @@
 
       <!-- Chips -->
       <q-card-actions align="right">
-        <CurrentPlayerCountChip />
+        <CurrentPlayerCountChip :current="current" />
         <HeavyStatuChip />
       </q-card-actions>
     </q-card>
@@ -25,8 +25,7 @@ export default defineComponent({
   name: 'WorldStatuCard',
   props: {
     name: { type: String, default: 'unknown' },
-    max_heavy: { type: Number },
-    current_heavy: { type: Number },
+    current: { type: Number, default: 0 },
   },
   components: { HeavyStatuChip, CurrentPlayerCountChip },
   setup() {

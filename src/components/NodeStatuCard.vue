@@ -13,12 +13,7 @@
       <q-separator dark />
 
       <q-card-actions align="right">
-        <div v-if="is_online">
-          <OnlineChip></OnlineChip>
-        </div>
-        <div v-else>
-          <OfflineChip></OfflineChip>
-        </div>
+        <OnlineStatuChip :is_online="is_online"></OnlineStatuChip>
       </q-card-actions>
     </q-card>
   </div>
@@ -26,8 +21,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import OnlineChip from './chips/OnlineChip.vue';
-import OfflineChip from './chips/OfflineChip.vue';
+import OnlineStatuChip from './chips/OnlineStatuChip.vue';
 
 export default defineComponent({
   name: 'NodeStatuCard',
@@ -50,8 +44,7 @@ export default defineComponent({
     },
   },
   components: {
-    OnlineChip,
-    OfflineChip,
+    OnlineStatuChip,
   },
 });
 </script>

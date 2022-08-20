@@ -1,12 +1,15 @@
 <template>
-  <div class="fit row wrap justify-start items-start content-start">
-    <NodeStatuCard></NodeStatuCard>
-    <NodeStatuCard></NodeStatuCard>
-    <NodeStatuCard></NodeStatuCard>
-    <NodeStatuCard></NodeStatuCard> <NodeStatuCard></NodeStatuCard>
-    <NodeStatuCard></NodeStatuCard>
-    <NodeStatuCard></NodeStatuCard>
-    <NodeStatuCard></NodeStatuCard>
+  <div class="fit row justify-center">
+    <NodeStatuCard />
+    <NodeStatuCard />
+    <NodeStatuCard />
+    <NodeStatuCard />
+    <NodeStatuCard />
+    <NodeStatuCard />
+    <NodeStatuCard />
+    <NodeStatuCard />
+    <NodeStatuCard />
+    <NodeStatuCard />
   </div>
 </template>
 

@@ -63,6 +63,12 @@ const usefulLinks = [
 
 const statuLinks = [
   {
+    title: 'Index Page',
+    caption: 'The home',
+    icon: 'layers',
+    link: '/#/',
+  },
+  {
     title: 'Node Status',
     caption: 'View all node status',
     icon: 'dns',
